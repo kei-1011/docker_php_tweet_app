@@ -132,3 +132,6 @@ Version: '5.7.31'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Communi
 2021-02-27T05:41:26.287885Z 0 [Note] Event Scheduler: Loaded 0 events
 2021-02-27T05:41:26.288666Z 0 [Note] mysqld: ready for connections.
 Version: '5.7.31'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+2021-02-27T07:32:44.054133Z 113 [Note] Access denied for user 'root'@'172.18.0.4' (using password: YES)
+2021-02-27T07:32:44.162620Z 114 [Note] Access denied for user 'root'@'172.18.0.4' (using password: YES)
+2021-02-27T07:32:44.178368Z 115 [Note] Access denied for user 'root'@'172.18.0.4' (using password: YES)
