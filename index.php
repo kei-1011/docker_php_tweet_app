@@ -9,11 +9,8 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/lib/view/header.php');
 ?>
 <main class="top">
   <div id="container" class="container">
-    <h1>top page</h1>
 
-    <input id="btn-mode" type="checkbox"> ダークモード
-
-
+    <a href="profile.php?user_name=<?php echo $_SESSION['me']->user_name; ?>">ユーザーぺーじ</a>
     <form action="logout.php" method="post" id="logout">
       <input type="submit" value="ログアウト" name="submit" class="logout-btn">
       <input type="hidden" name="token" value="<?php echo h($_SESSION['token']);?>">

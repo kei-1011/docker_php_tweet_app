@@ -40,3 +40,6 @@ Stack trace:
 #1 /var/www/html/index.php(4): MyApp\Controller\Index->run()
 #2 {main}
   thrown in /var/www/html/lib/Model/User.php on line 58
+[28-Feb-2021 00:02:19 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89
+[28-Feb-2021 00:02:19 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89
+[28-Feb-2021 00:02:22 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89

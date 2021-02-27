@@ -34,21 +34,6 @@ table {
 html {
   font-size: 100%;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: #fff;
-  }
-}
-.light-theme {
-  background: #fff;
-  color: #333;
-}
-.dark-theme {
-  background: #000;
-  color: #ddd
-}
-
 
 body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -140,23 +125,15 @@ footer {
 }
 
 .logout-btn {
-  display: inline-block;
-  border-radius: 4px;
   font-size: 14px;
-  text-align: center;
   cursor: pointer;
-  padding: 10px 20px;
-  background: #FAFBFC;
-  color: #119CFE;
-  transition:all 0.3s;
-  border: 1px solid #FAFBFC;
-  font-weight: bold;
+  padding: 0;
+  background: none;
+  color: #333;
+  border: none;
 }
 .logout-btn:hover {
-  /* border:1px solid #eee; */
-  /* color: #119D01; */
-  /* background-color: #eee; */
-  opacity: 0.8;
+  background-color: none;
 }
 
 /* login
