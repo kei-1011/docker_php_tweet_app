@@ -18,6 +18,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/lib/view/header.php');
         <input type="password" name="password" id="password" >
         <p class="error"><?php echo h($app->getErrors('login'));?></p>
       </div>
+      <!-- TODO remember me の設定 -->
       <input type="submit" value="ログイン" name="submit" class="login-btn">
       <p class="signup"><a class="signup-link" href="/signup.php">サインアップ</a></p>
       <input type="hidden" name="token" value="<?php echo h($_SESSION['token']);?>">

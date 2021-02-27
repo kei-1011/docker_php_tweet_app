@@ -16,3 +16,27 @@
 [27-Feb-2021 16:26:58 Asia/Tokyo] PHP Fatal error:  require_once(): Failed opening required '/lib/view/header.php' (include_path='.:/usr/local/lib/php') in /var/www/html/login.php on line 6
 [27-Feb-2021 16:34:51 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /var/www/html/index.php on line 41
 [27-Feb-2021 16:34:51 Asia/Tokyo] PHP Parse error:  syntax error, unexpected end of file in /var/www/html/index.php on line 41
+[27-Feb-2021 16:51:39 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function setFetchMode() on bool in /var/www/html/lib/Model/User.php:58
+Stack trace:
+#0 /var/www/html/lib/Controller/Index.php(24): MyApp\Model\User->findAll()
+#1 /var/www/html/index.php(4): MyApp\Controller\Index->run()
+#2 {main}
+  thrown in /var/www/html/lib/Model/User.php on line 58
+[27-Feb-2021 16:51:39 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function setFetchMode() on bool in /var/www/html/lib/Model/User.php:58
+Stack trace:
+#0 /var/www/html/lib/Controller/Index.php(24): MyApp\Model\User->findAll()
+#1 /var/www/html/index.php(4): MyApp\Controller\Index->run()
+#2 {main}
+  thrown in /var/www/html/lib/Model/User.php on line 58
+[27-Feb-2021 16:51:53 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function setFetchMode() on bool in /var/www/html/lib/Model/User.php:58
+Stack trace:
+#0 /var/www/html/lib/Controller/Index.php(24): MyApp\Model\User->findAll()
+#1 /var/www/html/index.php(4): MyApp\Controller\Index->run()
+#2 {main}
+  thrown in /var/www/html/lib/Model/User.php on line 58
+[27-Feb-2021 16:51:53 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function setFetchMode() on bool in /var/www/html/lib/Model/User.php:58
+Stack trace:
+#0 /var/www/html/lib/Controller/Index.php(24): MyApp\Model\User->findAll()
+#1 /var/www/html/index.php(4): MyApp\Controller\Index->run()
+#2 {main}
+  thrown in /var/www/html/lib/Model/User.php on line 58

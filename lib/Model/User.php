@@ -10,6 +10,8 @@ class User extends \MyApp\Model {
   // ユーザー作成
   public function create($values) {
 
+    // TODO user_nameの重複もチェック
+
     // メールアドレス重複チェック
     $user = $this->db->prepare('SELECT COUNT(*) AS cnt FROM users WHERE email=?');
     $user->execute(array($values['email']));    //email=?の部分に$_POST['email]を指定
@@ -20,8 +22,7 @@ class User extends \MyApp\Model {
 
     } else {
       // 重複なければ登録
-
-      $stmt = $this->db->prepare("insert into users (user_name,email,password,created,modified) values (:user_name, :email, :password, now(), now())");
+      $stmt = $this->db->prepare("insert into users (user_name,email,password,screen_name,profile_image,profile_cover,bio,url,created,modified) values (:user_name, :email, :password, '', '', '', '', '', now(), now())");
       $res = $stmt->execute([
         ':user_name' => $values['user_name'],
         ':email' => $values['email'],
