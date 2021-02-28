@@ -43,3 +43,87 @@ Stack trace:
 [28-Feb-2021 00:02:19 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89
 [28-Feb-2021 00:02:19 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89
 [28-Feb-2021 00:02:22 Asia/Tokyo] PHP Notice:  Undefined index: user_name in /var/www/html/lib/view/header.php on line 89
+[28-Feb-2021 23:12:11 Asia/Tokyo] PHP Notice:  Undefined variable: user in /var/www/html/profile.php on line 8
+[28-Feb-2021 23:13:53 Asia/Tokyo] PHP Notice:  Undefined variable: users in /var/www/html/lib/Controller/Profile.php on line 27
+[28-Feb-2021 23:14:28 Asia/Tokyo] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/html/profile.php on line 8
+[28-Feb-2021 23:16:56 Asia/Tokyo] PHP Warning:  Illegal string offset 'user_name' in /var/www/html/lib/Model/User.php on line 66
+[28-Feb-2021 23:19:05 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$user_name in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:19:11 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:19:34 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$users in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:19:40 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/lib/Controller/Profile.php:26
+Stack trace:
+#0 /var/www/html/profile.php(5): MyApp\Controller\Profile->run('admin')
+#1 {main}
+  thrown in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:19:59 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/lib/Controller/Profile.php:26
+Stack trace:
+#0 /var/www/html/profile.php(5): MyApp\Controller\Profile->run('admin')
+#1 {main}
+  thrown in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:03 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_values in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:31 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_values in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:31 Asia/Tokyo] PHP Notice:  Trying to get property 'users' of non-object in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:35 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_values in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:53 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$users in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:20:53 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/lib/Controller/Profile.php on line 26
+[28-Feb-2021 23:21:05 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$users in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:21:12 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_values in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:21:21 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:22:49 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$users in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:23:05 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:25:20 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:25:32 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:25:49 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$users in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:25:55 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:12 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$user_name in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:17 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:24 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_value in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:24 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:29 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_value in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:29 Asia/Tokyo] PHP Notice:  Trying to get property 'users' of non-object in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:26:29 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:11 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_value in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:11 Asia/Tokyo] PHP Notice:  Trying to get property 'users' of non-object in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:11 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:59 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_value in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:59 Asia/Tokyo] PHP Notice:  Trying to get property 'users' of non-object in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:27:59 Asia/Tokyo] PHP Notice:  Trying to access array offset on value of type null in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:29:17 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$user in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:29:22 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:29:27 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:29:38 Asia/Tokyo] PHP Notice:  Undefined property: MyApp\Controller\Profile::$_values in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:29:50 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type MyApp\Controller\Profile as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6
+[28-Feb-2021 23:31:30 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/profile.php:6
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/profile.php on line 6

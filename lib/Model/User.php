@@ -59,4 +59,15 @@ class User extends \MyApp\Model {
     $stmt->setFetchMode(\PDO::FETCH_CLASS, 'stdClass');
     return $stmt->fetchAll();
   }
+
+  public function profile($user_name) {
+    $stmt = $this->db->prepare("select * from users where user_name = :user_name");
+    $stmt->execute([
+      ':user_name' => $user_name
+    ]);
+    $stmt->setFetchMode(\PDO::FETCH_CLASS, 'stdClass');
+    $user = $stmt->fetchAll();
+
+    return $user;
+  }
 }
