@@ -14,7 +14,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/lib/view/header.php');
         <?php require_once($_SERVER['DOCUMENT_ROOT'].'/lib/view/sidebar.php'); ?>
       </div>
 
-      <div class="col-md-8 main-wrapper p-0">
+      <div class="col-md-7 main-wrapper p-0">
 
       <h2>個別ユーザーページ</h2>
 
