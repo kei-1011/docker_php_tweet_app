@@ -26,7 +26,7 @@
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">Twit</a>
+        <a class="navbar-brand" href="/">Twit</a>
 
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> ホーム</a>
+              <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i> ホーム</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="far fa-bell"></i> 通知</a>
@@ -50,7 +50,7 @@
               <a class="nav-link" href="#"><i class="far fa-bookmark"></i> ブックマーク</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.php?user_name='<?php echo $_SESSION['me']->user_name; ?>'"><i class="far fa-user"></i> プロフィール</a>
+              <a class="nav-link" href="profile.php?user_name=<?php echo $_SESSION['me']->user_name; ?>"><i class="far fa-user"></i> プロフィール</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fas fa-feather-alt"></i></a>
@@ -59,13 +59,13 @@
             <!-- Navbar dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                ユーザー
+                <?php echo $_SESSION['me']->user_name; ?>
               </a>
               <!-- Dropdown menu -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">ユーザーページ　</a></li>
-                <li class="dropdown-item">
-                  <form action="logout.php" method="post" id="logout">
+                <li>
+                  <form action="logout.php" method="post" id="logout" class='dropdown-item'>
                     <input type="submit" value="ログアウト" name="submit" class="logout-btn">
                     <input type="hidden" name="token" value="<?php echo h($_SESSION['token']); ?>">
                   </form>

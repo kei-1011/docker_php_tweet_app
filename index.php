@@ -4,17 +4,11 @@ $app = new MyApp\Controller\Index();
 $app->run();
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/lib/view/header.php');
-// 登録したタスクをリスト表示させる
 
 ?>
 <main class="top">
   <div id="container" class="container">
-
-    <a href="profile.php?user_name=<?php echo $_SESSION['me']->user_name; ?>">ユーザーぺーじ</a>
-    <form action="logout.php" method="post" id="logout">
-      <input type="submit" value="ログアウト" name="submit" class="logout-btn">
-      <input type="hidden" name="token" value="<?php echo h($_SESSION['token']);?>">
-    </form>
+<h1>top</h1>
   </div><!--container-->
 </main>
 <input type="hidden" name="token" id="token" value="<?php echo h($_SESSION['token']);?>">
